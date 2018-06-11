@@ -1,0 +1,47 @@
+.signup{
+    width: 30%;
+    height: auto;
+    border: solid thin lightgreen;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+
+#form-head{
+
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 20%;
+}
+h3{
+    color: green;
+    float: right;
+}
+h4{
+    color: black;
+}
+form{
+    margin-top: 15px;
+}
+
+#logo{
+    height: 60px;
+}
+
+.signup input[type=text],input[type=email]{
+    width: 70%;
+    height: auto;
+    padding: 10px 10px;
+    margin-left: 10%;
+    margin-bottom: 5px;
+}
+
+input[type=submit]{
+    height: 50%;
+    width: 40%;
+    padding: 10px 15px;
+    margin-left: 25%;
+    margin-bottom: 5px;
+    border-radius: 45px;
+    background-color: green;
+    color: white;
+}
