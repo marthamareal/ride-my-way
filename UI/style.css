@@ -117,6 +117,7 @@ table, td, th {
 }
 th, td {
     padding: 15px;
+    width: 20px;
 }
 
 .sub-menu{
@@ -140,4 +141,51 @@ th, td {
     color: white;
     padding: 5px 5px;
 
+}
+#request{
+    background-color: green;
+    border-radius: 25px;
+    color: white;
+    padding: 5px 15px;
+
+}
+#cancel{
+    background-color: red;
+    border-radius: 25px;
+    color: white;
+    padding: 5px 15px;
+
+}
+
+.show-ride{
+    width: 60%;
+    height: auto;
+    border: solid thin lightgreen;
+    margin-left: 20%;
+    margin-top: 8%;
+    background-color: white;
+}
+.ride-details{
+    padding: 3em 8em;
+}
+.buttons{
+    margin-left: 40%;
+
+}
+
+p, #right{
+    float: right;
+    margin-right: 10%;
+}
+p, #left{
+    float: left;
+    margin-left: 7%;
+}
+.ride-details table{
+    margin: auto;
+    padding: 2px;
+}
+.ride-details th,td{
+    width: auto;
+    padding: 2px;
 }
