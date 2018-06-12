@@ -173,19 +173,142 @@ th, td {
 
 }
 
-p, #right{
-    float: right;
-    margin-right: 10%;
+.content-home{
+    width: 85%;
+    margin-left: 10%;
+    margin-top: 2%;
 }
-p, #left{
-    float: left;
+.content-home div{
+    display: inline-block;
+}
+.rides{
+    background-color: white;
+    height: auto;
+    width: 40%;
+    margin-left: 5%;
+}
+.rides th{
+     background-color: limegreen;
+    color: white;
+    font-size: smaller;
+}
+.rides table{
     margin-left: 7%;
 }
-.ride-details table{
-    margin: auto;
-    padding: 2px;
+.rides table, td, th{
+    border: 1px solid #ddd;
+
 }
-.ride-details th,td{
-    width: auto;
-    padding: 2px;
+.totals{
+    float: right;
+    background-color: white;
+    height: 50%;
+    width: 30%;
+    margin-left: 5%;
+}
+.freinds{
+    background-color: white;
+    height: auto;
+    width: 20%;
+    float: left;
+}
+#freind-header{
+    width:100%;
+    background-color: lightgrey;
+    height: 10%;
+}
+#freind-header h5{
+    float: none;
+    color: green;
+    padding: 0 15px;
+}
+.bottom-gif img{
+    width: 100%;
+    margin-top: 2px;
+}
+
+.user-profile{
+    background-color: white;
+    display: inline-block;
+    color: green;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+    padding: 5px 35px;
+}
+.user-profile strong{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20%;
+    font-size: x-large;
+}
+.user-profile #avatar img{
+    border-radius: 25px;
+    height: 40px;
+    margin-left: 10%;
+
+}
+.freind{
+    display: inline-block;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.freind label{
+    padding: 0;
+    margin-left: 5%;
+
+}
+#freind-avatar{
+    border-radius: 25px;
+    height: 50px;
+    margin-left: 10%;
+    float: left;
+}
+#rides-header{
+    background-color: red;
+    height: 20%;
+    width: 100%;
+}
+#rides-header select{
+    width: 100%;
+    padding: 5px 20px;
+    color: green;
+    text-align: center;
+    font-size: larger;
+}
+
+#total-header{
+    width:100%;
+    background-color: lightgrey;
+    height: 10%;
+}
+#total-header h5{
+    float: none;
+    color: green;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.card-given{
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 20px;
+    padding: 5px 15px;
+    background-color: limegreen;
+    color: white;
+    height: 100px;
+}
+
+.card-taken{
+    width: 40%;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 20px;
+    background-color: red;
+    margin-bottom: 50px;
+    padding: 5px 15px;
+    color: white;
+
 }
