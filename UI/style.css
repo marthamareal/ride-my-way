@@ -1,9 +1,13 @@
+body{
+    background-color: #98FB98;
+}
 .signup-login{
     width: 30%;
     height: auto;
     border: solid thin lightgreen;
     margin-left: 35%;
     margin-top: 5%;
+    background-color: white;
 }
 
 #form-head{
@@ -12,7 +16,8 @@
     margin-top: 5px;
     margin-left: 20%;
 }
-h3{
+
+h3,h2{
     color: green;
     float: right;
 }
@@ -37,9 +42,9 @@ form{
 
 input[type=submit]{
     height: 50%;
-    width: 45%;
+    width: 30%;
     padding: 10px 15px;
-    margin-left: 25%;
+    margin-left: 30%;
     margin-bottom: 10px;
     border-radius: 45px;
     background-color: green;
@@ -48,4 +53,91 @@ input[type=submit]{
 label{
     padding: 10% 10%;
     margin-bottom: 5px;
+}
+
+.app-profile{
+
+    display: inline-block;
+    margin-left: 10%;
+    float: left;
+}
+
+.menu .menu-list{
+    float: left;
+    background-color: inherit;
+    width: inherit;
+    height: inherit;
+}
+
+#menu-logo{
+     height: 90px;
+}
+
+.menu{
+    background-color: white;
+}
+
+.menu ul{
+    margin-left: 30%;
+    margin-top: 25px;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 10px 25px;
+    color: darkgreen;
+}
+.create-ride{
+    width: 40%;
+    height: auto;
+    border: solid thin lightgreen;
+    margin-left: 35%;
+    margin-top: 2%;
+    background-color: white;
+}
+
+h4{
+    color: green;
+}
+
+table{
+    width: 85%;
+    margin-top: 20px;
+    margin-left: 10%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th{
+    background-color: lightgrey;
+    color: darkgreen;
+}
+table, td, th {
+    /*border: 1px solid #ddd;*/
+    text-align: left;
+}
+th, td {
+    padding: 15px;
+}
+
+.sub-menu{
+    background-color: white;
+    color: green;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+    padding: 5px 35px;
+}
+.clear{
+    clear: both;
+}
+#accept{
+    color: white;
+    background-color: green;
+    padding: 5px 5px;
+}
+#reject{
+    background-color: red;
+    color: white;
+    padding: 5px 5px;
+
 }
