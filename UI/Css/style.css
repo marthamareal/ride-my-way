@@ -1,15 +1,56 @@
 body{
     background-color: #98FB98;
+    margin: 0;
 }
-.signup-login{
-    width: 30%;
-    height: auto;
-    border: solid thin lightgreen;
-    margin-left: 35%;
-    margin-top: 5%;
-    background-color: white;
+.index-content{
+    display: flex;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    background: url("../images/drive.jpg") ;
 }
 
+.signup-login{
+    width: 42%;
+    height: auto;
+    border: solid thin lightgreen;
+    margin-top: 1px;
+    background-color: white;
+}
+.signup-login>center {
+    color: red!important;
+}
+.login{
+     width: 30%;
+     height: auto;
+     border: solid thin lightgreen;
+     margin-left: 35%;
+     margin-top: 5%;
+     background-color: white;
+}
+#start-pub{
+    font-size: medium;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 30px!important;
+}
+.info{
+    float:left;
+    width: 70%;
+    height: 100%!important;
+    margin-top: 1px;
+}
+#info-text{
+    color: white;
+    font-size: larger;
+    width: 70%;
+    background: linear-gradient(transparent, black);
+    padding: 5px 15px;
+    margin-left: 15%;
+    position: relative;
+    margin-top: 15%;
+}
 #form-head{
 
     display: inline-block;
@@ -38,14 +79,16 @@ form{
     padding: 10px 10px;
     margin-left: 10%;
     margin-bottom: 5px;
+    color: green;
 }
+
 
 input[type=submit]{
     height: 50%;
     width: 30%;
     padding: 10px 15px;
     margin-left: 30%;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
     border-radius: 45px;
     background-color: green;
     color: white;
