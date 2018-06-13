@@ -226,6 +226,7 @@ th, td {
     width:100%;
     background: linear-gradient(whitesmoke, whitesmoke);
     height: 10%;
+    margin-bottom: 5px;
 }
 #freind-header h5{
     float: none;
@@ -341,11 +342,12 @@ th, td {
 #notification{
     display: none;
     position: absolute;
-    width: 18%;
+    width: 20%;
     /*height: 400px;*/
     margin-top: 45px;
     border: green solid thin ;
     background-color: white;
+    margin-right: 5%;
 }
 
 #notification-head{
@@ -360,7 +362,7 @@ th, td {
 }
 
 .notification-msg {
-    font-size: smaller;
+    font-size: medium;
     padding: 5px 10px;
     margin-top: 5%;
     margin-bottom: 3%;
@@ -377,4 +379,46 @@ th, td {
 .rejected-msg{
 
     color: red;
+}
+
+.freinds>#freind-header{
+    display: flex;
+    border: lightgrey;
+
+}
+#hovered{
+    width: 50%;
+    padding: 15px 20px;
+    border-bottom: green solid;
+    color: green;
+}
+#accounts{
+    width: 50%;
+    padding: 15px 20px;
+    color: green;
+    border-left: lightgrey solid thin;
+}
+#freind-content{
+    display: block;
+}
+#accounts-content{
+    display: none;
+}
+
+.fa-user-plus{
+    float: right;
+    color: limegreen!important;
+     margin-right: 15px;
+    font-size: medium!important;
+
+}
+.fa-user-times{
+    float: right;
+    color: red!important;
+    margin-right: 15px;
+    font-size: medium!important;
+}
+.fa-user{
+    font-size: large!important;
+    color: green!important;
 }

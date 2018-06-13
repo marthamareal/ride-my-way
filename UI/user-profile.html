@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="Css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="menu">
     <div class="app-profile">
-        <img src="logo.jpg" id="menu-logo">
+        <img src="images/logo.jpg" id="menu-logo">
         <h2>Ride-My-Way</h2>
     </div>
 <div class="menu-list">
@@ -27,7 +27,7 @@
     <div class="user-profile">
         <strong>Welcome Martha Mareal</strong>
         <div id="avatar">
-            <img src="avatar.png">
+            <img src="images/avatar.png">
 
             <div class="notification">
             <span><i class="fa fa-bell"></i>  <i class="fa fa-circle" onclick="notification()"></i></span>
@@ -46,7 +46,7 @@
                        </div>
 
                        <div class="notification-msg">
-                           <span class="accepted-msg"><i class="fa fa-close"></i>   Dear mareal Henry accepted Your Ride Request RF0025   </span>
+                           <span class="accepted-msg"><i class="fa fa-user"></i>   Dear mareal Rogers sent you a friend request <i class="fa fa-user-plus"></i>  <i class="fa fa-user-times"></i>  </span>
                        </div>
 
                        <div class="notification-msg">
@@ -54,9 +54,6 @@
                        </div>
                         <div class="notification-msg">
                            <span class="accepted-msg"><i class="fa fa-close"></i>   Dear mareal Henry accepted Your Ride Request RF0027   </span>
-                       </div>
-                        <div class="notification-msg">
-                           <span class="accepted-msg"><i class="fa fa-close"></i>   Dear mareal Henry accepted Your Ride Request RF0028   </span>
                        </div>
 
             </div>
@@ -73,41 +70,84 @@
      <div class="freinds">
 
          <div id="freind-header">
-             <h5>FREINDS</h5>
+
+                 <div  id="hovered" onclick="freinds()" >FREINDS  </div>
+
+                 <div id="accounts" onclick="accounts()"> ACCOUNTS</div>
+
          </div>
 
+       <!--User freinds area begins-->
+
+        <div id="freind-content">
             <div class="freind">
-                <img src="avatar.png" id="freind-avatar">
+                <img src="images/avatar.png" id="freind-avatar">
 
                 <label>miria kats</label>
             </div>
-         <div class="freind">
-                <img src="me.jpg" id="freind-avatar">
+             <div class="freind">
+                    <img src="images/me.jpg" id="freind-avatar">
 
-                <label>miria kats</label>
-            </div>
-         <div class="freind">
-                <img src="avatar.png" id="freind-avatar">
+                    <label>Keneth</label>
+                </div>
+             <div class="freind">
+                    <img src="images/avatar.png" id="freind-avatar">
 
-                <label>miria kats</label>
-            </div>
-         <div class="freind">
-                <img src="me.jpg" id="freind-avatar">
+                    <label>Henry Collins</label>
+                </div>
+             <div class="freind">
+                    <img src="images/me.jpg" id="freind-avatar">
 
-                <label>miria kats</label>
-            </div>
-         <div class="freind">
-                <img src="avatar.png" id="freind-avatar">
+                    <label>Carlos Gacia</label>
+                </div>
+             <div class="freind">
+                    <img src="images/avatar.png" id="freind-avatar">
 
-                <label>miria kats</label>
-            </div>
-         <div class="freind">
-                <img src="me.jpg" id="freind-avatar">
+                    <label>Johnson Raider</label>
+                </div>
 
-                <label>miria kats</label>
+        </div>
+
+         <!--Acoounts area begins-->
+
+         <div id="accounts-content">
+            <div class="freind">
+                <img src="images/avatar.png" id="freind-avatar">
+
+                <label>Rogers<i class="fa fa-user-plus"></i></label>
             </div>
+             <div class="freind">
+                    <img src="images/me.jpg" id="freind-avatar">
+
+                    <label>Reachel K<i class="fa fa-user-plus"></i></label>
+                </div>
+
+             <div class="freind">
+                    <img src="images/avatar.png" id="freind-avatar">
+
+                    <label>Henry Collins  <i class="fa fa-user-times"></i></label>
+                </div>
+
+             <div class="freind">
+                    <img src="images/avatar.png" id="freind-avatar">
+
+                    <label>Happy Harrison<i class="fa fa-user-plus"></i></label>
+                </div>
+
+             <div class="freind">
+                    <img src="images/me.jpg" id="freind-avatar">
+
+                    <label>Carlos Gacia <i class="fa fa-user-plus"></i></label>
+                </div>
+             <div class="freind">
+                    <img src="images/avatar.png" id="freind-avatar">
+
+                    <label>Johnson Raider <i class="fa fa-user-times"></i></label>
+                </div>
+
+        </div>
          <div class="bottom-gif">
-             <img src="car.gif">
+             <img src="images/car.gif">
          </div>
 
 
@@ -184,6 +224,11 @@
 </div>
 
 <script>
+    let hovered = document.getElementById("hovered");
+    let _accounts = document.getElementById("accounts");
+
+
+
    function notification() {
 
    let div = document.getElementById("notification");
@@ -194,6 +239,66 @@
     else {
          document.getElementById("analytics").style.display = "block";
         div.style.display = "none";
+    }
+
+}
+
+function accounts() {
+
+    let div = document.getElementById("accounts-content");
+
+
+
+    if(div.style.display === "none"){
+
+        document.getElementById("freind-content").style.display = "none";
+        hovered.style.borderBottom = "inherit";
+
+       div.style.display = "block";
+       _accounts.style.borderBottom = "green solid";
+    }
+     else if (div.style.display === "block") {
+
+        div.style.display = "block";
+        _accounts.style.borderBottom = "green solid";
+    }
+
+      else {
+         document.getElementById("freind-content").style.display = "block";
+         hovered.style.borderBottom = "green solid";
+
+        div.style.display = "none";
+        _accounts.style.borderBottom = "inherit";
+    }
+
+}
+
+function freinds() {
+
+
+    let div = document.getElementById("freind-content");
+
+
+    if(div.style.display === "none"){
+
+        document.getElementById("accounts-content").style.display = "none";
+        _accounts.style.borderBottom = "inherit";
+
+
+       div.style.display = "block";
+        hovered.style.borderBottom = "green solid";
+    }
+     else if (div.style.display === "block") {
+
+        div.style.display = "block";
+        hovered.style.borderBottom = "green solid";
+    }
+      else {
+         document.getElementById("accounts-content").style.display = "block";
+         _accounts.style.borderBottom = "green solid";
+
+        div.style.display = "none";
+        hovered.style.borderBottom = "inherit";
     }
 
 }
