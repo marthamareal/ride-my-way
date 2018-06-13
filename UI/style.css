@@ -153,7 +153,7 @@ th, td {
 
 }
 #request{
-    background-color: green;
+    background-color: limegreen;
     border-radius: 25px;
     color: white;
     padding: 5px 15px;
@@ -224,7 +224,7 @@ th, td {
 }
 #freind-header{
     width:100%;
-    background-color: lightgrey;
+    background: linear-gradient(whitesmoke, whitesmoke);
     height: 10%;
 }
 #freind-header h5{
@@ -291,8 +291,8 @@ th, td {
 
 #total-header{
     width:100%;
-    background-color: lightgrey;
-    height: 10%;
+    background: linear-gradient(whitesmoke, whitesmoke);
+    height: 10%
 }
 #total-header h5{
     float: none;
@@ -321,4 +321,60 @@ th, td {
     padding: 5px 15px;
     color: white;
 
+}
+
+.notification
+{
+    float: right;
+    margin-right: 18%;
+    margin-top: 5px;
+}
+
+.fa-bell{
+    font-size: x-large!important;
+}
+.fa-circle{
+    color: red;
+    font-size: large;
+}
+
+#notification{
+    display: none;
+    position: absolute;
+    width: 18%;
+    /*height: 400px;*/
+    margin-top: 45px;
+    border: green solid thin ;
+    background-color: white;
+}
+
+#notification-head{
+    width:100%;
+    background: linear-gradient(whitesmoke, whitesmoke);
+    height: 50px;
+    color: green;
+    padding: 0.001em;
+}
+#notification-head>h4{
+    margin-left: 25%;
+}
+
+.notification-msg {
+    font-size: smaller;
+    padding: 5px 10px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.notification-msg>span>i{
+    color: red;
+}
+
+.accepted-msg{
+    color: green;
+}
+
+.rejected-msg{
+
+    color: red;
 }

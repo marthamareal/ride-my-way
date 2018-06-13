@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="menu">
@@ -27,9 +28,45 @@
         <strong>Welcome Martha Mareal</strong>
         <div id="avatar">
             <img src="avatar.png">
+
+            <div class="notification">
+            <span><i class="fa fa-bell"></i>  <i class="fa fa-circle" onclick="notification()"></i></span>
+
+                   <div id="notification">
+                       <div id="notification-head">
+                           <h4>Notifications</h4>
+                       </div>
+
+                       <div class="notification-msg">
+                           <span class="rejected-msg"><i class="fa fa-close"></i>   Dear mareal Collins rejected Your Ride Request RF0023   </span>
+                       </div>
+
+                       <div class="notification-msg">
+                           <span class="accepted-msg"><i class="fa fa-close"></i>   Dear mareal Keneth accepted Your Ride Request RF0024</span>
+                       </div>
+
+                       <div class="notification-msg">
+                           <span class="accepted-msg"><i class="fa fa-close"></i>   Dear mareal Henry accepted Your Ride Request RF0025   </span>
+                       </div>
+
+                       <div class="notification-msg">
+                           <span class="rejected-msg"><i class="fa fa-close"></i>   Dear mareal Keneth rejected Your Ride Request RF0026</span>
+                       </div>
+                        <div class="notification-msg">
+                           <span class="accepted-msg"><i class="fa fa-close"></i>   Dear mareal Henry accepted Your Ride Request RF0027   </span>
+                       </div>
+                        <div class="notification-msg">
+                           <span class="accepted-msg"><i class="fa fa-close"></i>   Dear mareal Henry accepted Your Ride Request RF0028   </span>
+                       </div>
+
+            </div>
         </div>
 
+        </div>
+
+
     </div>
+
 
 <div class="content-home">
 
@@ -127,7 +164,7 @@
 
     </div>
 
-    <div class="totals">
+    <div class="totals" id="analytics">
          <div id="total-header">
             <center><h5>ANALYTICS</h5></center>
          </div>
@@ -146,5 +183,21 @@
 
 </div>
 
+<script>
+   function notification() {
+
+   let div = document.getElementById("notification");
+    if(div.style.display === "none"){
+        document.getElementById("analytics").style.display = "none";
+       div.style.display = "block";
+    }
+    else {
+         document.getElementById("analytics").style.display = "block";
+        div.style.display = "none";
+    }
+
+}
+
+</script>
 </body>
 </html>
