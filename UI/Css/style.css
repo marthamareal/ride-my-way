@@ -477,7 +477,7 @@ th, td {
     color: green;
 }
 #accounts{
-    width: 50%;
+    /*width: 50%;*/
     padding: 15px 20px;
     color: green;
     border-left: lightgrey solid thin;
@@ -505,4 +505,195 @@ th, td {
 .fa-user{
     font-size: large!important;
     color: green!important;
+}
+
+.table-footer{
+    margin-left: 10%;
+    width: 85%;
+    height: 50px;
+    background: whitesmoke;
+}
+#prev{
+    color: red;
+    float: left;
+    margin-top: 12px;
+    margin-left: 40px;
+    background: linear-gradient(lightgrey,whitesmoke);
+    padding: 5px 25px;
+
+
+}
+#next{color: green;
+    float: right;
+    margin-top: 12px;
+    margin-right: 40px;
+    padding: 5px 25px;
+    background: linear-gradient(lightgrey,whitesmoke);
+}
+
+/*ADDING RESPONSIVNESS DUE TO DEVICE CHANGES*/
+
+@media(max-width: 1500px) {
+
+    /*index page*/
+    .menu ul {
+        margin-left: 10%;
+        margin-top: 5px;
+    }
+
+    .menu ul li {
+        display: inline-block;
+        padding: 5px 10px;
+        color: darkgreen;
+    }
+
+    .signup-login {
+        width: 80%;
+        height: auto;
+        border: solid thin lightgreen;
+        margin-top: 5px;
+        background-color: white;
+        margin-left: 10%;
+    }
+
+    .index-content {
+        display: flow-root;
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+        background: url("../images/drive.jpg");
+    }
+
+    /*User profile page*/
+
+    .content-home div {
+	 display: inline-table;
+}
+
+    .user-profile {
+        background-color: white;
+        display: inline-block;
+        color: green;
+        width: 62%;
+        margin-top: 20px;
+        margin-left: 13%;
+        padding: 5px 35px;
+    }
+    .user-profile strong {
+	float: left;
+	margin-top: 10px;
+	/* margin-left: 20%; */
+	font-size: large;
+}
+    .user-profile strong {
+	float: left;
+	margin-top: 10px;
+	/* margin-left: 20%; */
+	font-size: large;
+}
+
+    #notification {
+	display: none;
+	 position: relative;
+	width: 120%;
+	/* height: 400px; */
+	margin-top: 45px;
+	border: green solid thin;
+	background-color: white;
+	margin-right: 5%;
+}
+
+    .freinds {
+	background-color: white;
+	height: auto;
+    width: 90%;
+    margin-top: 20px;
+	margin-left: 3%;
+}
+
+    .rides {
+	background-color: white;
+	height: auto;
+	width: 90%;
+	margin-left: 3%;
+	margin-top: 40px;
+}
+
+    .totals {
+        float: none;
+	background-color: white;
+	height: 50%;
+	width: 90%;
+    margin-top: 20px;
+	margin-left: 3%;
+}
+
+    /*RIDE REQUEST LIST and RIDE OFFER LIST PAGES*/
+.sub-menu {
+	background-color: white;
+	color: green;
+	 width: auto;
+	margin-top: 20px;
+	 margin-left: 0;
+	padding: 10px 35px;
+	display: flex;
+}
+
+.sub-menu > a > button {
+	width: 150px;
+	height: 40px;
+	font-size: large;
+	color: white;
+	float: right;
+	margin-top: 5px;
+	border-radius: 50px;
+	padding: 5px 10px;
+	background-color: limegreen;
+}
+
+table, td, th {
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+table {
+	margin-top: 25px;
+	margin-left: 4%;
+	border-collapse: collapse;
+	background-color: white;
+}
+.table-footer {
+	 margin-left: 0;
+	 width: 85%;
+	height: 50px;
+	background: inherit;
+}
+
+th, td {
+    padding: 14px;
+    width: 20px;
+}
+
+#reject{
+    padding: 5px 10px;
+}
+
+#accept{
+    padding: 5px 10px;
+}
+
+/*Page for creating ride offers*/
+
+.create-ride{
+    width: 90%;
+    height: auto;
+    border: solid thin lightgreen;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: white;
+}
+label{
+    padding: 0 3%;
+}
+
 }
