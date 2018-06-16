@@ -68,15 +68,18 @@
 
 <div class="content-home">
 
-     <div class="rides">
+     <div class="rides" id="rides">
 
         <div id="rides-header">
-             <select>
-                      <option value="">ALL RIDES(GIVEN & TAKEN)</option>
-                      <option value="">RIDES TAKEN</option>
-                      <option value="">RIDES GIVEN</option></select>
+              <div  class="all-rides" onclick="change_rides_view('all-rides','given','taken')">ALL RIDES (5) </div>
+
+                 <div class="given" onclick="change_rides_view('given','all-rides','taken')"> RIDES TAKEN (2)</div>
+
+                 <div class="taken" onclick="change_rides_view('taken','given','all-rides')"> RIDES GIVEN(3)</div>
+
          </div>
-            <table>
+
+            <table id="all-rides">
             <tr>
                 <th></th>
                 <th>DATE</th>
@@ -115,6 +118,63 @@
             </tr>
 
         </table>
+
+         <table id="given">
+            <tr>
+                <th></th>
+                <th>DATE</th>
+                <th>REF NO</th>
+                <th>ACTION</th>
+            </tr>
+
+             <tr>
+                <td>2</td>
+                <td>12/07/2018</td>
+                <td>RF0005</td>
+                <td><a href="show-ride.html"><button id="request">View</button></a></td>
+            </tr>
+             <tr>
+                <td>4</td>
+                <td>23/03/2018</td>
+                <td>RF0010</td>
+                <td><a href="show-ride.html"><button id="request">View</button></a></td>
+            </tr>
+
+
+        </table>
+
+
+
+         <table id="taken">
+            <tr>
+                <th></th>
+                <th>DATE</th>
+                <th>REF NO</th>
+                <th>ACTION</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>22/02/2018</td>
+                <td>RF0001</td>
+                <td><a href="show-ride.html"><button id="cancel">View</button></a></td>
+            </tr>
+
+             <tr>
+                <td>3</td>
+                <td>2/04/2018</td>
+                <td>RF0008</td>
+               <td><a href="show-ride.html"><button id="cancel">View</button></a></td>
+            </tr>
+
+             <tr>
+                <td>5</td>
+                <td>14/09/2018</td>
+                <td>RF0034</td>
+                <td><a href="show-ride.html"><button id="cancel">View</button></a></td>
+            </tr>
+
+        </table>
+
         <div class="table-footer">
        <button id="prev"><< Previous</button>&nbsp; <button id="next">Next >></button>
     </div>
@@ -209,23 +269,6 @@
     </div>
 
 
-    <div class="totals" id="analytics">
-         <div id="total-header">
-            <center><h5>ANALYTICS</h5></center>
-         </div>
-
-        <div class="card-given">
-            <center><p>GIVEN (20)</p></center>
-        </div>
-
-
-        <div class="card-taken">
-            <center><p>TAKEN (9)</p></center>
-
-        </div>
-
-    </div>
-
 </div>
 
 <script>
@@ -233,17 +276,43 @@
     let _accounts = document.getElementById("accounts");
 
 
-
-   function notification() {
+function notification() {
 
    let div = document.getElementById("notification");
     if(div.style.display === "none"){
-        document.getElementById("analytics").style.display = "none";
+        document.getElementById("rides").style.width = "50%";
        div.style.display = "block";
     }
+    else if (div.style.display === "block") {
+            document.getElementById("rides").style.width= "75%";
+            div.style.display = "none";
+
+    }
+
     else {
-         document.getElementById("analytics").style.display = "block";
         div.style.display = "none";
+    }
+
+}
+
+function change_rides_view(a,b,c) {
+
+    let x = document.getElementById(a);
+    let y = document.getElementById(b);
+    let z = document.getElementById(c);
+
+    if (x.style.display === "none"){
+        x.style.display = "table";
+        x.style.borderBottomColor = "green solid";
+        y.style.display = "none";
+        z.style.display = "none";
+
+    }
+    else if (a.style.display === "table") {
+        x.style.display = "table";
+        x.style.borderBottomColor = "green solid";
+        y.style.display = "none";
+        z.style.display = "none";
     }
 
 }

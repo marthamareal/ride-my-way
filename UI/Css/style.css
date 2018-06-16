@@ -1,10 +1,11 @@
 body{
     background-color: #98FB98;
     margin: 0;
+    height: 100vh;
 }
 .index-content{
     display: flex;
-    height: 100%;
+    height: 74%;
     width: 80%;
     margin-left: 10%;
     background: url("../images/drive.jpg") ;
@@ -37,7 +38,6 @@ body{
     margin-left: 28%;
     margin-top: 4%;
     margin-bottom: 5%;
-    border-radius: 45px;
     background-color: green;
     color: white;
 }
@@ -45,7 +45,7 @@ body{
     width: 50%;
     padding: 10px 15px;
     margin-left: 28%;
-    border-radius: 45px;
+    /*border-radius: 45px;*/
     margin-bottom: 10%;
     background-color: red;
     color: white;
@@ -56,25 +56,10 @@ body{
     font-size: medium;
     background-color: red;
     color: white;
-    border-radius: 25px;
+    /*border-radius: 25px;*/
     padding: 12px 30px!important;
 }
-.info{
-    float:left;
-    width: 70%;
-    height: 100%!important;
-    margin-top: 1px;
-}
-#info-text{
-    color: white;
-    font-size: larger;
-    width: 70%;
-    background: linear-gradient(transparent, black);
-    padding: 5px 15px;
-    margin-left: 15%;
-    position: relative;
-    margin-top: 15%;
-}
+
 #form-head{
 
     display: inline-block;
@@ -91,6 +76,9 @@ h4{
 }
 form{
     margin-top: 15px;
+}
+.login-index>form{
+    margin-top: 50px;
 }
 
 #logo{
@@ -113,7 +101,6 @@ input[type=submit]{
     padding: 10px 15px;
     margin-left: 30%;
     margin-bottom: 10%;
-    border-radius: 45px;
     background-color: green;
     color: white;
 }
@@ -215,7 +202,7 @@ th, td {
     color: white;
     margin-left: 85%;
     margin-top: 5px;
-    border-radius: 50px;
+    /*border-radius: 50px;*/
     padding: 5px 10px;
     background-color: limegreen;
 
@@ -226,38 +213,36 @@ th, td {
 #accept{
     color: white;
     background-color: limegreen;
-    border-radius: 25px;
+    /*border-radius: 25px;*/
     padding: 5px 15px;
 }
 #reject{
     background-color: red;
     color: white;
-    border-radius: 25px;
+    /*border-radius: 25px;*/
     padding: 5px 15px;
 
 }
 #request{
     background-color: limegreen;
-    border-radius: 25px;
+    /*border-radius: 25px;*/
     color: white;
     padding: 5px 15px;
 
 }
 #cancel{
     background-color: red;
-    border-radius: 25px;
+    /*border-radius: 25px;*/
     color: white;
     padding: 5px 15px;
 
 }
 
 .show-ride{
-    width: 60%;
-    height: auto;
-    border: solid thin lightgreen;
-    margin-left: 20%;
-    margin-top: 8%;
-    background-color: white;
+    display: block!important;
+}
+.show-ride>h2{
+    float: none;
 }
 .ride-details{
     padding: 3em 8em;
@@ -278,7 +263,7 @@ th, td {
 .rides{
     background-color: white;
     height: auto;
-    width: 40%;
+    width: 75%;
     margin-left: 5%;
 }
 .rides th{
@@ -293,13 +278,39 @@ th, td {
     /*border: 1px solid #ddd;*/
 
 }
-.totals{
-    float: right;
-    background-color: white;
-    height: 50%;
-    width: 30%;
-    margin-left: 5%;
+
+.all-rides{
+    width: 295px;
+    padding: 15px 20px;
+    /*border-bottom: green solid;*/
+    color: green;
 }
+.given{
+    width: 295px;
+    padding: 15px 20px;
+    border-left: lightgrey solid thin;
+    color: green;
+}
+.taken{
+    width: 294px;
+    padding: 15px 20px;
+    border-left: lightgrey solid thin;
+    color: green;
+}
+
+
+#all-rides{
+    display: table;
+}
+#given{
+    display: none;
+}
+#taken{
+    display: none;
+}
+
+
+
 .freinds{
     background-color: white;
     height: auto;
@@ -307,7 +318,7 @@ th, td {
     float: left;
 }
 #freind-header{
-    width:100%;
+    width:auto;
     background: linear-gradient(whitesmoke, whitesmoke);
     height: 10%;
     margin-bottom: 5px;
@@ -338,7 +349,7 @@ th, td {
     font-size: large;
 }
 .user-profile #avatar img{
-    border-radius: 25px;
+    /*border-radius: 25px;*/
     height: 40px;
     margin-left: 10%;
 
@@ -356,7 +367,7 @@ th, td {
 
 }
 #freind-avatar{
-    border-radius: 25px;
+    /*border-radius: 25px;*/
     height: 50px;
     margin-left: 10%;
     float: left;
@@ -471,13 +482,13 @@ th, td {
 
 }
 #hovered{
-    width: 50%;
+    width: 250px;
     padding: 15px 20px;
     border-bottom: green solid;
     color: green;
 }
 #accounts{
-    /*width: 50%;*/
+    width: 270px;
     padding: 15px 20px;
     color: green;
     border-left: lightgrey solid thin;
@@ -533,7 +544,7 @@ th, td {
 
 /*ADDING RESPONSIVNESS DUE TO DEVICE CHANGES*/
 
-@media(max-width: 1500px) {
+@media(max-width: 800px) {
 
     /*index page*/
     .menu ul {
@@ -579,16 +590,11 @@ th, td {
         margin-left: 13%;
         padding: 5px 35px;
     }
+
     .user-profile strong {
 	float: left;
 	margin-top: 10px;
-	/* margin-left: 20%; */
-	font-size: large;
-}
-    .user-profile strong {
-	float: left;
-	margin-top: 10px;
-	/* margin-left: 20%; */
+	 margin-left: 0;
 	font-size: large;
 }
 
@@ -606,7 +612,7 @@ th, td {
     .freinds {
 	background-color: white;
 	height: auto;
-    width: 90%;
+    width: 300px;
     margin-top: 20px;
 	margin-left: 3%;
 }
@@ -619,14 +625,6 @@ th, td {
 	margin-top: 40px;
 }
 
-    .totals {
-        float: none;
-	background-color: white;
-	height: 50%;
-	width: 90%;
-    margin-top: 20px;
-	margin-left: 3%;
-}
 
     /*RIDE REQUEST LIST and RIDE OFFER LIST PAGES*/
 .sub-menu {
@@ -646,7 +644,7 @@ th, td {
 	color: white;
 	float: right;
 	margin-top: 5px;
-	border-radius: 50px;
+	/*border-radius: 50px;*/
 	padding: 5px 10px;
 	background-color: limegreen;
 }
@@ -663,7 +661,7 @@ table {
 	background-color: white;
 }
 .table-footer {
-	 margin-left: 0;
+	 margin-left: 40px;
 	 width: 85%;
 	height: 50px;
 	background: inherit;
@@ -696,4 +694,26 @@ label{
     padding: 0 3%;
 }
 
+#freind-header{
+    width:auto;
+    background: linear-gradient(whitesmoke, whitesmoke);
+    height: 10%;
+    margin-bottom: 5px;
+}
+
+#accounts{
+    width: 165px;
+}
+#hovered{
+    width: 180px;
+}
+#all-rides{
+
+}
+#given{
+
+}
+#taken{
+
+}
 }
