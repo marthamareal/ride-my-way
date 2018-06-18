@@ -12,3 +12,10 @@ As a passenger, i can see all available ride offers, view it in details, request
 As a user i can send,receive, accept or reject  freind requests.
 As a user i can see users on the application and also my freinds on the application.
 
+*******Setting up server using flask*******
+Create a virtual enviroment and activate it.
+Install python 3 with "sudo apt-get install python3-venv"
+Install flask
+Install pylint
+Install pytest
+Install flask-restful
