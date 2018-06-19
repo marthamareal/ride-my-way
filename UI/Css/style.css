@@ -5,7 +5,7 @@ body{
 }
 .index-content{
     display: flex;
-    height: 60%;
+    height: 74%;
     width: 80%;
     margin-left: 10%;
     background: url("../images/drive.jpg") ;
@@ -578,6 +578,13 @@ float: none;
         padding: 5px 10px;
         color: darkgreen;
     }
+
+    .menu .menu-list{
+    float: left;
+    background-color: inherit;
+    width: inherit;
+    height: inherit;
+}
 
     .signup-login {
         width: 80%;
