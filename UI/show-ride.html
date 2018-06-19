@@ -68,47 +68,42 @@
 
 <div class="content-home">
 
-     <div class="rides" id="rides">
-
-        <div id="rides-header">
-              <div  class="all-rides" onclick="change_rides_view('all-rides','given','taken')">ALL RIDES (5) </div>
-
-                 <div class="given" onclick="change_rides_view('given','all-rides','taken')"> RIDES TAKEN (2)</div>
-
-                 <div class="taken" onclick="change_rides_view('taken','given','all-rides')"> RIDES GIVEN(3)</div>
-
-         </div>
-
-
-    <h2>RIDE by NAGGINDA MARTHA</h2>
+     <div class="show-ride-details">
+         <center><h3>RIDE by NAGGINDA MARTHA</h3></center>
     <div  class="show-ride-details">
         <label><strong>Date : 22/02/2018</strong></label>
         <table>
             <tbody>
+
             <tr>
-                <td>ref</td>
-                <td>4000</td>
+                <td><strong>REF NO:</strong></td>
+                <td><strong>RF0005</strong></td>
+
+            </tr>
+            <tr>
+                <td>SOURCE:</td>
+                <td>Shoprite-Town</td>
 
             </tr>  <tr>
-                 <td>ref</td>
-                <td>2000</td>
+                 <td>DESTINATION:</td>
+                <td>Ntinda-stage</td>
 
 
             </tr>  <tr>
 
-                <td>ref</td>
-                <td>1500</td>
+                <td>START TIME:</td>
+                <td>11:30:00 AM</td>
 
             </tr>  <tr>
-                <td>Yams</td>
-                <td>3000</td>
+                <td>DRIVER CONTACT:</td>
+                <td>0758686536</td>
 
             </tr>
             </tbody>
 
         </table>
         <br>
-        <center><p>price: 500</a></p><br></center>
+        <center><p>price: <label><strong>5000</strong></label></p><br></center>
     </div>
 
     </div>
@@ -117,9 +112,6 @@
 
 
 <script>
-    let hovered = document.getElementById("hovered");
-    let _accounts = document.getElementById("accounts");
-
 
 function notification() {
 
