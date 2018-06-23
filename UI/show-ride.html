@@ -31,7 +31,7 @@
             <img src="images/avatar.png">
 
             <div class="notification">
-            <span><i class="fa fa-bell"></i>  <i class="fa fa-circle" onclick="notification()"></i></span>
+            <span><i class="fa fa-bell" onclick="notification()"></i>  <i class="fa fa-circle" onclick="notification()"></i></span>
 
                    <div id="notification">
                        <div id="notification-head">
@@ -71,10 +71,11 @@
      <div class="show-ride-details">
          <center><h3>RIDE by NAGGINDA MARTHA</h3></center>
     <div  class="show-ride-details">
-        <label><strong>Date : 22/02/2018</strong></label>
-        <table>
-            <tbody>
 
+        <table>
+
+            <tbody>
+            <tr><label><strong>Date : 22/02/2018</strong></label></tr>
             <tr>
                 <td><strong>REF NO:</strong></td>
                 <td><strong>RF0005</strong></td>
@@ -104,6 +105,8 @@
         </table>
         <br>
         <center><p>price: <label><strong>5000</strong></label></p><br></center>
+
+        <center><a href="user-profile.html"><button id="accept">Request to Join</button></a></center><br><br>
     </div>
 
     </div>
@@ -117,11 +120,9 @@ function notification() {
 
    let div = document.getElementById("notification");
     if(div.style.display === "none"){
-        document.getElementById("rides").style.width = "50%";
        div.style.display = "block";
     }
     else if (div.style.display === "block") {
-            document.getElementById("rides").style.width= "75%";
             div.style.display = "none";
 
     }
