@@ -95,7 +95,13 @@ form{
     color: green;
 }
 
-
+textarea{
+    width: 70%;
+    height: 200px;
+    padding: 10px 15px;
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
 input[type=submit]{
     height: 50%;
     width: 30%;
@@ -108,6 +114,7 @@ input[type=submit]{
 label{
     padding: 10% 10%;
     margin-bottom: 5px;
+    font-size: large;
 }
 
 .app-profile{
@@ -133,7 +140,7 @@ label{
 }
 
 .menu ul{
-    margin-left: 30%;
+    margin-left: 200px;
     margin-top: 25px;
 }
 .menu ul li{
@@ -160,6 +167,28 @@ label{
     background-color: white;
 }
 
+.contact-us{
+    width: 850px;
+    height: auto;
+    border: solid thin lightgreen;
+    margin-left: 20%;
+    margin-top: 60px;
+    background-color: white;
+}
+.about-us{
+    width: 950px;
+    height: auto;
+    border: solid thin lightgreen;
+    margin-left: 20%;
+    margin-top: 60px;
+    padding: 15px 25px;
+    background-color: white;
+}
+#about{
+    background-color: red;
+    padding: 10px;
+    color: white;
+}
 h4{
     color: green;
 }
@@ -201,7 +230,7 @@ th, td {
     height: 40px;
     font-size: large;
     color: white;
-    margin-left: 85%;
+    margin-left: 850px;
     margin-top: 5px;
     /*border-radius: 50px;*/
     padding: 5px 10px;
